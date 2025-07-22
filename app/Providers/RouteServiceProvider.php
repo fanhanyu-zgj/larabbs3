@@ -1,4 +1,12 @@
 <?php
+/*
+ * @Author: wangzhen wdsj002@126.com
+ * @Date: 2025-07-22 17:33:48
+ * @LastEditors: wangzhen wdsj002@126.com
+ * @LastEditTime: 2025-07-22 19:14:46
+ * @FilePath: \larabbs\app\Providers\RouteServiceProvider.php
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 
 namespace App\Providers;
 
@@ -18,6 +26,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = '/home';
+    protected $namespace='App\\Http\\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
@@ -34,6 +43,7 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/api.php'));
 
             Route::middleware('web')
+            ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
         });
     }
