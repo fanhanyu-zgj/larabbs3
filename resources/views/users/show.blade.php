@@ -9,7 +9,7 @@
     <div class="col-lg-3 col-md-3 hidden-sm hidden-xs user-info">
       <div class="card ">
         <img class="card-img-top"
-          src="https://t9.baidu.com/it/u=97135732,1263902656&fm=3031&app=3031&size=r120,100&q=100&n=0&g=6n&f=JPEG&fmt=auto&maxorilen2heic=2000000?s=733F38C4C6BAC76E5A12EC910300C089"
+          src="{{ $user->avatar }}"
           alt="{{ $user->name }}">
           <div class="card-body">
             <h5><strong>个人简介</strong></h5>
