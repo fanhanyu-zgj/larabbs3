@@ -3,7 +3,7 @@
  * @Author: wangzhen wdsj002@126.com
  * @Date: 2025-07-22 17:33:48
  * @LastEditors: wangzhen wdsj002@126.com
- * @LastEditTime: 2025-07-31 11:04:09
+ * @LastEditTime: 2025-07-31 11:15:58
  * @FilePath: \larabbs\routes\web.php
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -48,3 +48,4 @@ Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->na
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
 Route::get('users/{user}','UsersController@show')->name('users.show');
+Route::resource('users','UsersController');
