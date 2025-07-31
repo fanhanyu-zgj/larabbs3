@@ -25,7 +25,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              <img src="https://t9.baidu.com/it/u=97135732,1263902656&fm=3031&app=3031&size=r120,100&q=100&n=0&g=6n&f=JPEG&fmt=auto&maxorilen2heic=2000000?s=733F38C4C6BAC76E5A12EC910300C089"
+              <img src="{{ $user->avatar }}"
                 class="img-responsive img-circle" width="30px" height="30px">
               {{ Auth::user()->name }}
             </a>
