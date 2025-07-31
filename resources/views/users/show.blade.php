@@ -11,13 +11,13 @@
         <img class="card-img-top"
           src="https://t9.baidu.com/it/u=97135732,1263902656&fm=3031&app=3031&size=r120,100&q=100&n=0&g=6n&f=JPEG&fmt=auto&maxorilen2heic=2000000?s=733F38C4C6BAC76E5A12EC910300C089"
           alt="{{ $user->name }}">
-        <div class="card-body">
-          <h5><strong>个人简介</strong></h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-          <hr>
-          <h5><strong>注册于</strong></h5>
-          <p>January 01 1901</p>
-        </div>
+          <div class="card-body">
+            <h5><strong>个人简介</strong></h5>
+            <p>{{ $user->introduction }}</p>
+            <hr>
+            <h5><strong>注册于</strong></h5>
+            <p>{{ $user->created_at->diffForHumans() }}</p>
+          </div>
       </div>
     </div>
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
